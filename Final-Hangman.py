@@ -12,7 +12,7 @@ class Hangman:
         self.hidden_word = ["_" for _ in self.word]  # სიტყვა, რომელიც ჩავიფიქრე - ქვედა ტირეებით
 
     def display_word(self):
-        # ამოწმებს, თუ რა ეტაპზეა ახლა სიტყვა
+        # აჩვენებს მოთამაშეს, თუ რა ეტაპზეა ახლა სიტყვა (.join მეთოდი იღებს self.hidden_word სიის ყველა ელემენტს და აერთიანებს მათ ერთ ლაინზე, თითოეულ ელემენტს შორის სფეისით
         return " ".join(self.hidden_word)
 
     def guess_letter(self, letter):
